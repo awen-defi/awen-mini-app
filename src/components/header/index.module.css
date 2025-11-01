@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 2rem 0.4rem 1rem;
+  background-color: var(--header-background);
+  box-shadow: 0 0 0.4rem 0 #ffffffa6;
+  min-height: 5.7rem;
+  background-color: var(--background);
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.logo {
+  width: 7.4rem;
+  height: 4.9rem;
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}

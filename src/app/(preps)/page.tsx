@@ -1,5 +1,9 @@
-import styles from "./_components/page.module.css";
+import { MainLayout } from "@/layouts";
 
 export default function Home() {
-  return <div className={styles.page}></div>;
+  return (
+    <MainLayout>
+      <h1>Hello, Preps!</h1>
+    </MainLayout>
+  );
 }

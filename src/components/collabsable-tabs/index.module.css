@@ -1,0 +1,113 @@
+.wrapper {
+  width: 100%;
+  background: #011a43;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.4rem 0 #ffffffa6;
+}
+
+.header {
+  padding: 1.2rem 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 0.4rem #ffffffa6;
+}
+
+.pairInfo {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.coinIcon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.pairName {
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 1.2rem;
+  color: #a8dfed;
+  margin-inline: 0.4rem 0.7rem;
+}
+
+.coin_dropdown_triangle {
+  color: #a8dfed;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.priceInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  color: #2ba88a;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 0.9rem;
+}
+
+.tabButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.tabButton {
+  font-weight: 700;
+  line-height: 1.4rem;
+  letter-spacing: 0;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: #a8dfed;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+    width: 0;
+    height: 0.1rem;
+    background: #a8dfed;
+    transition: all 0.3s;
+  }
+
+  &.active {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.collapseButton {
+  color: #a8dfed;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.collapseButton.collapsed {
+  transform: rotateZ(180deg);
+}
+
+.content {
+  padding-inline: 0.9rem;
+}
+
+.chartContent,
+.infoContent {
+  min-height: 20rem;
+}
